@@ -54,6 +54,9 @@ def main():
             else:
                 print("The comment is offensive untargeted")  
                 
-                
-                
+
+
+
+if __name__ == "__main__":
+    main()                
                   
