@@ -42,17 +42,17 @@ def main():
     if st.button("Submit"):
         if text_input_1:
             classification = classify_text(text_input_1)
-            if classification==1:
-                print("the comment is offensive")
+            if classification == 1:
+                st.write("The comment is offensive")
             else:
-                print("the comment is not offensive")
+                st.write("The comment is not offensive")
             multimodel_classification=classify_offensive(text_input_1)    
-            if multimodel_classification==0:
-                print("The comment is offensive targeting a group")
-            elif multimodel_classification==1:
-                print("The comment is offensive targeting an individual")    
+            if multimodel_classification == 0:
+                st.write("The comment is offensive targeting a group")
+            elif multimodel_classification == 1:
+                st.write("The comment is offensive targeting an individual")
             else:
-                print("The comment is offensive untargeted")  
+                st.write("The comment is offensive untargeted")
                 
 
 
